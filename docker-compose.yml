@@ -1,0 +1,32 @@
+version: '3.3'
+
+services:
+  db:
+    image: mongo:latest
+    container_name: back_challenge_db
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: badah
+    ports:
+        - 27017:27017
+        - 28017:28017
+    volumes:
+      - ./docker/mongoDB/data:/data/db
+
+  app:
+    container_name: back_challenge_app
+    build: docker/flask
+    restart: always
+    environment:
+      DB_HOST: mongodb://root:badah@back_challenge_db:27017/admin
+      DB_DATABASE: truck_challenge
+    volumes: 
+      - ./app:/var/www/app
+    links:
+        - db
+    depends_on:
+        - db
+    ports:
+        - 5000:5000
+
