@@ -1,3 +1,4 @@
 docker/mongoDB/data/
 **/__pycache__/
 **/.DS_store
+app/.pytest_cache

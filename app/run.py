@@ -1,6 +1,8 @@
 import config
-from routes import routes
+from routes.routes import configRoutes
 from flask_swagger_ui import get_swaggerui_blueprint
+
+configRoutes(config)
 
 SWAGGER_URL = '/api/docs'
 API_URL = '/api/docs/json'

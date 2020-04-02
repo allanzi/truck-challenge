@@ -2,3 +2,6 @@ flask
 flask_restful
 Flask-PyMongo
 flask-swagger-ui
+pytest
+coverage
+pytest-cov

@@ -7,6 +7,7 @@
 - [Docker Docs](https://docs.docker.com/)
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) and [Flask-RESTful](https://flask-restful.readthedocs.io/en/latest/)
 - [MongoDB](https://www.mongodb.com/) and [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/)
+- [pytest](https://docs.pytest.org/en/latest/index.html)
 
 
 ### How to install
@@ -32,4 +33,9 @@ docker exec -it back_challenge_app sh
 Access api database container:
 ```bash
 docker exec -it back_challenge_db sh
+```
+
+Running tests
+```bash
+docker exec -it back_challenge_app py.test -s
 ```
