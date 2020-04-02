@@ -8,6 +8,7 @@
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) and [Flask-RESTful](https://flask-restful.readthedocs.io/en/latest/)
 - [MongoDB](https://www.mongodb.com/) and [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/)
 - [pytest](https://docs.pytest.org/en/latest/index.html)
+- [marshmallow](https://marshmallow.readthedocs.io/en/stable/#)
 
 
 ### How to install
