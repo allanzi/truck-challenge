@@ -7,3 +7,4 @@ pytest-cov
 marshmallow
 jsonmerge
 Werkzeug
+flask-cors
